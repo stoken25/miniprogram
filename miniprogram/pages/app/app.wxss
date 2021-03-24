@@ -1,0 +1,40 @@
+/* miniprogram/pages/app/app.wxss */
+.app_nav {
+  margin-bottom: 20rpx;
+}
+
+.nav_title {
+  font-size: 30rpx;
+  color: #555;
+	padding: 20rpx 18rpx 24rpx 18rpx;
+}
+
+.nav_content {
+	padding: 0 18rpx 18rpx 18rpx;
+  flex-wrap: wrap;
+}
+
+.nav_item {
+  width: 49%;
+  border-radius: 6rpx;
+  padding: 20rpx;
+  margin-top: 8rpx;
+  box-shadow: 0px 0px 8px 0px rgba(0, 100, 129, 0.14);
+}
+.nav_item:nth-child(1), .nav_item:nth-child(2) {
+  margin-top: 0;
+}
+.nav_image {
+  margin-right: 16rpx;
+  /* width: 68rpx;
+  height: 68rpx; */
+}
+
+.nav_text view {
+  font-size: 26rpx;
+  color: #555;
+}
+.nav_text view:nth-of-type(2) {
+  font-size: 20rpx;
+  color: #999;
+}

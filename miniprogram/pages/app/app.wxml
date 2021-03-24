@@ -1,0 +1,19 @@
+<!--miniprogram/pages/app/app.wxml-->
+<view>
+  <block wx:for="{{navList}}" wx:for-item="nav" wx:key="navTitle">
+    <view class="app_nav">
+      <view class="nav_title">{{nav.navTitle}}</view>
+      <view class="nav_content flex_box_between">
+        <block wx:for="{{nav.children}}" wx:for-item="sub" wx:key="name">
+          <view class="nav_item flex_box" bindtap="turnToPage" data-path="{{sub.path}}">
+            <image src="{{sub.icon}}" style="width:{{sub.width}};height:{{sub.height}}" class="nav_image"></image>
+            <view class="nav_text">
+              <view>{{sub.name}}</view>
+              <view>{{sub.desc}}</view>
+            </view>
+          </view>
+        </block>
+      </view>
+    </view>
+  </block>
+</view>
