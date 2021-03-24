@@ -24,7 +24,8 @@
     ]
   },
   "include": [
-    "./**/*.ts"
+    "./**/*.ts",
+    "./typings/images.d.ts"
   ],
   "exclude": [
     "node_modules"

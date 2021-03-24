@@ -1,12 +1,14 @@
 {
   "pages": [
     "pages/index/index",
-    "pages/logs/logs"
+    "pages/app/app",
+    "pages/memorialDay/memorialDay",
+    "pages/memorialBook/memorialBook"
   ],
   "window": {
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "Weixin",
+    "navigationBarTitleText": "木旦一",
     "navigationBarTextStyle": "black"
   },
   "style": "v2",

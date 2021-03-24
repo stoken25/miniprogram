@@ -4,7 +4,7 @@ const app = getApp<IAppOption>()
 
 Page({
   data: {
-    motto: 'Hello World',
+    motto: '日月星辰之外，你是第四种难得',
     userInfo: {},
     hasUserInfo: false,
     canIUse: wx.canIUse('button.open-type.getUserInfo'),
@@ -14,7 +14,7 @@ Page({
   // 事件处理函数
   bindViewTap() {
     wx.navigateTo({
-      url: '../logs/logs',
+      url: '/pages/app/app',
     })
   },
   onLoad() {
