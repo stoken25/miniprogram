@@ -80,5 +80,41 @@ view {
 }
 
 .ml20 {
-  margin-left: 40rpx;
+  margin-left: 40rpx !important;
+}
+
+.mr20 {
+  margin-right: 40rpx !important;
+}
+
+.mt20 {
+  margin-top: 40rpx !important;
+}
+.font36 {
+  font-size: 36rpx;
+}
+
+.view_gap {
+  width: 100%;
+  height: 18rpx;
+  background-color: #efefef;
+}
+
+.weui-icon-btn_more {
+  display: none !important;
+}
+
+.weui-half-screen-dialog__hd__main {
+  position: relative;
+}
+
+.self_half_screen_dialog_title_right {
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-weight: normal;
+}
+
+.swipe_operate_btn {
+  height: 100% !important;
 }

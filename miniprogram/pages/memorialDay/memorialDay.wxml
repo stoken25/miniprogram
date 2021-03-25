@@ -1,2 +1,39 @@
 <!--miniprogram/pages/memorialDay/memorialDay.wxml-->
-<text>纪念日</text>
+<view>
+  <view class="list_contnent">
+    <block wx:for="{{3}}" wx:for-item="item" wx:key="item">
+      <van-swipe-cell right-width="{{ 65 }}" async-close bind:close="slideButtonTap">
+        <view class="list_item flex_box_between">
+          <view class="item_left">
+            <view class="item_title">{{item}}</view>
+            <view class="item_date">2020/03/0{{item}}</view>
+          </view>
+          <view class="item_right">
+            <text>已经</text>
+            <text class="font36 item_days">{{item}}</text>
+            <text>天</text>
+          </view>
+        </view>
+        <view slot="right" class="list_swipe_operate">
+          <van-button custom-class="swipe_operate_btn" type="danger">删除</van-button>
+        </view>
+      </van-swipe-cell>
+      <view class="view_gap"></view>
+    </block>
+  </view>
+  <view class="add_box flex_box_center" bindtap="openAddDialog">
+    <!-- <mp-icon icon="add" color="#333" size="{{25}}"></mp-icon> -->
+  </view>
+  <!-- <mp-half-screen-dialog 
+    bindbuttontap="buttontap"
+    show="{{showAddDialog}}"
+    maskClosable="{{false}}" 
+    extClass="add_dialog"
+  >
+    <view slot="title">
+      <view>添加纪念日</view>
+      <view class="self_half_screen_dialog_title_right">完成</view>
+    </view>
+    <view slot="desc">test</view>
+  </mp-half-screen-dialog> -->
+</view>
