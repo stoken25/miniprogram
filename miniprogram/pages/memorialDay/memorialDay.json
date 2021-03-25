@@ -1,4 +1,8 @@
 {
-  "navigationBarTitleText": "纪念册",
-  "usingComponents": {}
+  "navigationBarTitleText": "纪念日",
+  "usingComponents": {
+    "van-swipe-cell": "@vant/weapp/swipe-cell/index",
+    "van-button": "@vant/weapp/button/index",
+    "van-dialog": "@vant/weapp/dialog/index"
+  }
 }
